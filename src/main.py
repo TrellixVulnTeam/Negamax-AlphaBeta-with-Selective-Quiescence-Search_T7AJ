@@ -1,6 +1,6 @@
 import Tree
 
-x = Tree.TreeGenerator(1)
 
-x.generate(0, 0, 0, 0, 0)
+x = Tree.TreeGenerator(5)
+x.generate(2, 0, 0, 0, 0)
 x.display()
