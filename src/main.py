@@ -1,6 +1,9 @@
 import Tree
 
 
-x = Tree.TreeGenerator(5)
-x.generate(2, 0, 0, 0, 0)
+x = Tree.TreeGenerator(2)
+x.generate(3)
 x.display()
+x.export("test.txt")
+
+
