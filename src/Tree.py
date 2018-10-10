@@ -20,10 +20,21 @@ class TreeGenerator:
         if filename is not None:
             file = open(filename, "r")
             for line in file:
+                line = line.strip()
                 if line.startswith("Parent:"):
-                    pass
+                    parent = line.split(': ')[-1:][0]
+                    if parent == 'None':
+                        parent = None
+                    else:
+                        parent = int(parent)
+                    self.nodebuilder(parent, isparent=True)
                 elif line.startswith("Child:"):
-                    pass
+                    child = line.split(': ')[-1][0]
+                    if child == 'None':
+                        child = None
+                    else:
+                        child = int(child)
+                    self.nodebuilder(child, parent)
                 else:
                     print("File wrong format!")
                     break
@@ -52,7 +63,7 @@ class TreeGenerator:
 
     def expand(self, node, factor):     # expand node by factor of variable "factor"
         for i in range(0, factor):
-            Node(self.random_value(), parent=node)
+            Node(self.random_value(), parent=node) # TODO: Change random to None
 
     def export(self, filename):
         """
@@ -70,3 +81,20 @@ class TreeGenerator:
             file.write("Parent: " + str(node.name) + "\n")
             for child in childlist:
                 file.write("\tChild: " + str(child.name) + "\n")
+
+    @staticmethod
+    def nodebuilder(self, nodename, p=None, isparent=False):
+        nodelist = [node for node in PreOrderIter(self.root)]
+        expanded = []
+        if isparent is True:
+            if len(nodelist) is 0:         # Root Node
+                self.root = Node(nodename)
+            else:
+                pass
+        else:
+            p = nodelist[]
+
+
+
+
+
