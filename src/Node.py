@@ -1,10 +1,10 @@
 class Node:
 
-    def __init__(self, data, parent):
+    def __init__(self, data, parent, depth=0):
         self.daughters = []     # For Daughters
         self.data = data
         self.parent = parent
-        self.depth = 0
+        self.depth = depth
         self.height = 0         # TODO: figure this out
 
     def is_internal(self):
@@ -30,3 +30,6 @@ class Node:
             return True
         else:
             return False
+
+    def add_daughter(self, data):
+        self.daughters.append(Node(data, self))

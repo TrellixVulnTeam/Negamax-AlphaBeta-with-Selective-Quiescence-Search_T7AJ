@@ -33,6 +33,21 @@ class Tree:
                 b_factor = self.branching_factor + random.randint(-1, 3)
                 self.generate(daughters=self.expand(daughter, b_factor), horizon=horizon-1)
 
+    @classmethod    # TODO: FINISH WHEN REST IS OVER
+    def from_file(cls, filename):   # For importing previously made trees
+        file = open(filename, "r")
+        line_number = 0
+        for line in file:
+            if line_number is 0:
+                cls.root = Node(int(line.strip()), None)
+                line_number += 1
+            else:
+                data = int(line.strip())
+                depth = line.count("\t")
+                print(str(data) + "\t" + str(depth))
+                line_number += 1
+        return cls(0, 0, cls.root.data, 0, 0)
+
     @staticmethod
     def expand(node, branching_factor):
         for i in range(0, branching_factor):
