@@ -23,22 +23,37 @@ class Tree:
     def root(self):
         return self.root
 
-    def generate(self):
-        nodes_toexpand = []
-        nodes_toexpand.append(self.root)
-        for i in range(0, self.horizon):
-            for node in nodes_toexpand:
-                nodes_toexpand = self.expand(node, self.branching_factor)[:]
+    def generate(self, node=None, daughters=None, horizon=None):
+        if node is None and daughters is None and horizon is None:
+            node = self.root
+            self.expand(node, self.branching_factor)
+            self.generate(daughters=node.daughters, horizon=self.horizon)
+        else:
+            for daughter in daughters:
+                if horizon is 2:
+                    break
+                self.generate(daughters=self.expand(daughter, self.branching_factor), horizon=horizon-1)
+
+
 
 
     @staticmethod
     def expand(node, branching_factor):
         for i in range(0, branching_factor):
-            node.daughters.append(Node(random.randint(1, 100), node))
-            node.daughters[-1].depth = node.daughters[-1].parent.depth + 1
+            node.daughters.append(Node(random.randint(1, 101), node))
+            node.daughters[i].depth = node.depth + 1
         return node.daughters
 
-    def display(self):
-        print(self.root.data)
-        for node in self.root.daughters:
+    def display(self, node=None, daughters=None):
+        if node is None and daughters is None:
+            node = self.root
             print(node.data)
+            self.display(daughters=node.daughters)
+        else:
+            for daughter in daughters:
+                for i in range(0, daughter.depth):
+                    print("\t", end='', flush=True)
+                print(daughter.data)
+                if daughter.is_leaf() is False:
+                    self.display(daughters=daughter.daughters)
+

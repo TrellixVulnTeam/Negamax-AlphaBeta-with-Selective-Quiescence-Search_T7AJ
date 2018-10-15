@@ -24,3 +24,9 @@ class Node:
             return True
         else:
             return False
+
+    def is_leaf(self):
+        if len(self.daughters) is 0:
+            return True
+        else:
+            return False
