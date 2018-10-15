@@ -20,9 +20,6 @@ class Tree:
         self.approx = approx
         self.interestingness = i
 
-    def root(self):
-        return self.root
-
     def generate(self, node=None, daughters=None, horizon=None):
         if node is None and daughters is None and horizon is None:
             node = self.root
@@ -32,10 +29,9 @@ class Tree:
             for daughter in daughters:
                 if horizon is 2:
                     break
-                self.generate(daughters=self.expand(daughter, self.branching_factor), horizon=horizon-1)
-
-
-
+                # non-uniform branching factor after root expansion
+                b_factor = self.branching_factor + random.randint(-1, 3)
+                self.generate(daughters=self.expand(daughter, b_factor), horizon=horizon-1)
 
     @staticmethod
     def expand(node, branching_factor):
@@ -57,3 +53,19 @@ class Tree:
                 if daughter.is_leaf() is False:
                     self.display(daughters=daughter.daughters)
 
+    def export(self, filename, node=None, daughters=None, file=None):
+        if file is None:
+            file = open(filename, "w+")
+            self.export(filename, node, daughters, file)
+        else:
+            if node is None and daughters is None:
+                node = self.root
+                file.write(str(node.data) + "\n")
+                self.export(filename, daughters=node.daughters, file=file)
+            else:
+                for daughter in daughters:
+                    for i in range(0, daughter.depth):
+                        file.write("\t")
+                    file.write(str(daughter.data) + "\n")
+                    if daughter.is_leaf() is False:
+                        self.export(filename, daughters=daughter.daughters, file=file)

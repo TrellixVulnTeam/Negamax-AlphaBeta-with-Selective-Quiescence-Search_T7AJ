@@ -7,7 +7,7 @@ class Node:
         self.depth = 0
         self.height = 0         # TODO: figure this out
 
-    def is_parent(self):
+    def is_internal(self):
         if len(self.daughters) > 0:
             return True
         else:
