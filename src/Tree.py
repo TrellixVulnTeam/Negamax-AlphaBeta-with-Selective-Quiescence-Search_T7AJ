@@ -29,9 +29,18 @@ class Tree:
             for daughter in daughters:
                 if horizon is 2:
                     break
+
                 # non-uniform branching factor after root expansion
-                b_factor = self.branching_factor + random.randint(-1, 3)
+                b_factor = self.varying_branching_factor()
+                if b_factor < 0:
+                    b_factor = 0
                 self.generate(daughters=self.expand(daughter, b_factor), horizon=horizon-1)
+
+        # add
+        nodelist = self.get_nodelist()
+        for node in nodelist:
+            if node.is_internal() and node.is_root() is False:
+                node.static_evaluation_val += random.randint(-self.approx, self.approx + 1)
 
     @classmethod    # TODO: FINISH WHEN REST IS OVER
     def from_file(cls, filename):   # For importing previously made trees
@@ -42,29 +51,44 @@ class Tree:
                 cls.root = Node(int(line.strip()), None)
                 line_number += 1
             else:
-                data = int(line.strip())
+                static_evaluation_val = int(line.strip())
                 depth = line.count("\t")
-                print(str(data) + "\t" + str(depth))
+                print(str(static_evaluation_val) + "\t" + str(depth))
                 line_number += 1
-        return cls(0, 0, cls.root.data, 0, 0)
+        return cls(0, 0, cls.root.static_evaluation_val, 0, 0)
 
-    @staticmethod
-    def expand(node, branching_factor):
-        for i in range(0, branching_factor):
-            node.daughters.append(Node(random.randint(1, 101), node))
-            node.daughters[i].depth = node.depth + 1
-        return node.daughters
+    def expand(self, node, branching_factor):
+        if branching_factor > 0:
+            x = random.randint(0, 11)   # number from 1 - 10
+            add_neg_parent = False
+
+            for i in range(branching_factor):
+                if (x <= 4 or i is (branching_factor - 1)) and add_neg_parent is False:   # 40% chance of occurring
+                    node.daughters.append(Node(-node.static_evaluation_val, node))   # negative of parent node
+                    add_neg_parent = True
+                else:
+                    node.daughters.append(Node(random.randint(-node.static_evaluation_val, 10000), node))
+            return node.daughters
+        else:
+            siblings = node.siblings()
+            if len(siblings) < 2:
+                return None     # Nothing left
+            else:
+                for sibling in siblings:
+                    if sibling is not node:
+                        b_factor = self.varying_branching_factor()
+                        return self.expand(sibling, b_factor)
 
     def display(self, node=None, daughters=None):
         if node is None and daughters is None:
             node = self.root
-            print(node.data)
+            print(node.static_evaluation_val)
             self.display(daughters=node.daughters)
         else:
             for daughter in daughters:
-                for i in range(0, daughter.depth):
+                for i in range(daughter.depth):
                     print("\t", end='', flush=True)
-                print(daughter.data)
+                print(daughter.static_evaluation_val)
                 if daughter.is_leaf() is False:
                     self.display(daughters=daughter.daughters)
 
@@ -75,12 +99,41 @@ class Tree:
         else:
             if node is None and daughters is None:
                 node = self.root
-                file.write(str(node.data) + "\n")
+                file.write(str(node.static_evaluation_val) + "\n")
                 self.export(filename, daughters=node.daughters, file=file)
             else:
                 for daughter in daughters:
-                    for i in range(0, daughter.depth):
+                    for i in range(daughter.depth):
                         file.write("\t")
-                    file.write(str(daughter.data) + "\n")
+                    file.write(str(daughter.static_evaluation_val) + "\n")
                     if daughter.is_leaf() is False:
                         self.export(filename, daughters=daughter.daughters, file=file)
+
+    def get_nodelist(self, node=None, nodelist=None):  # Get list of nodes from 'node' downwards
+        if node is None and nodelist is None:
+            nodelist = []
+            node = self.root
+            nodelist.append(node)
+            for node in node.daughters:
+                self.get_nodelist(node, nodelist)
+        else:
+            nodelist.append(node)
+            for node in node.daughters:
+                self.get_nodelist(node, nodelist)
+
+        return nodelist
+
+    def varying_branching_factor(self):
+        b_factor = self.branching_factor
+        chance = random.randint(1, 101)  # this number is to help vary branching factor
+        if chance in range(1, 4):  # 3% chance
+            b_factor = self.branching_factor + 2
+        elif chance in range(4, 10):  # 6% chance
+            b_factor = self.branching_factor + 1
+        elif chance in range(10, 90):  # 80% chance
+            b_factor = self.branching_factor
+        elif chance in range(90, 97):  # 7% chance
+            b_factor = self.branching_factor - 1
+        elif chance in range(97, 101):  # 4% chance
+            b_factor = self.branching_factor - 2
+        return b_factor

@@ -1,11 +1,15 @@
 class Node:
 
-    def __init__(self, data, parent, depth=0):
+    def __init__(self, static_evaluation_val, parent):
         self.daughters = []     # For Daughters
-        self.data = data
+        self.static_evaluation_val = static_evaluation_val
         self.parent = parent
-        self.depth = depth
+        if parent is not None:
+            self.depth = self.parent.depth + 1
+        else:
+            self.depth = 0
         self.height = 0         # TODO: figure this out
+        self.interesting = 0
 
     def is_internal(self):
         if len(self.daughters) > 0:
@@ -31,5 +35,17 @@ class Node:
         else:
             return False
 
-    def add_daughter(self, data):
-        self.daughters.append(Node(data, self))
+    def is_interesting(self):
+        if self.interesting > 0:
+            return True
+        else:
+            return False
+
+    def add_daughter(self, static_evaluation_val):
+        self.daughters.append(Node(static_evaluation_val, self))
+
+    def siblings(self):
+        if self.is_root():
+            return None
+        else:
+            return self.parent.daughters
