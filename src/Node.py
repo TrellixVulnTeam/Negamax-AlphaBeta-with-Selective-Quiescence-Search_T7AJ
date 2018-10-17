@@ -1,3 +1,11 @@
+"""
+Name: Sabeer Bakir
+Student No.: 16333886
+Email: sabeer.bakir@ucdconnect.ie
+"""
+import random
+
+
 class Node:
 
     def __init__(self, static_evaluation_val, parent):
@@ -9,7 +17,7 @@ class Node:
         else:
             self.depth = 0
         self.height = 0         # TODO: figure this out
-        self.interesting = 0
+        self.interesting = random.randint(0, 100)       # random interesting value
 
     def is_internal(self):
         if len(self.daughters) > 0:

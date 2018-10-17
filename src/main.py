@@ -1,3 +1,10 @@
+"""
+Name: Sabeer Bakir
+Student No.: 16333886
+Email: sabeer.bakir@ucdconnect.ie
+"""
+
+
 from Tree import Tree
 import random
 

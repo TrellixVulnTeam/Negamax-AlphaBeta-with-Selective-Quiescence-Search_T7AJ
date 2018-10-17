@@ -1,3 +1,10 @@
+"""
+Name: Sabeer Bakir
+Student No.: 16333886
+Email: sabeer.bakir@ucdconnect.ie
+"""
+
+
 from Node import Node
 import random
 
@@ -12,7 +19,7 @@ class Tree:
         :param h:   Horizon
         :param v:   Expected Value
         :param approx:  Approximation (Smudge values with this)
-        :param i:   interesting value
+        :param i:   interesting threshold value
         """
         self.branching_factor = b
         self.horizon = h
@@ -36,11 +43,11 @@ class Tree:
                     b_factor = 0
                 self.generate(daughters=self.expand(daughter, b_factor), horizon=horizon-1)
 
-        # add
         nodelist = self.get_nodelist()
         for node in nodelist:
             if node.is_internal() and node.is_root() is False:
                 node.static_evaluation_val += random.randint(-self.approx, self.approx + 1)
+                # YOU STOPPED HERE (INTERESTING STUFF)
 
     @classmethod    # TODO: FINISH WHEN REST IS OVER
     def from_file(cls, filename):   # For importing previously made trees
@@ -58,7 +65,7 @@ class Tree:
         return cls(0, 0, cls.root.static_evaluation_val, 0, 0)
 
     def expand(self, node, branching_factor):
-        if branching_factor > 0:
+        if branching_factor > 0 or node.static_evaluation_val is not 10000:
             x = random.randint(0, 11)   # number from 1 - 10
             add_neg_parent = False
 
