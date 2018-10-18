@@ -45,9 +45,22 @@ class Tree:
 
         nodelist = self.get_nodelist()
         for node in nodelist:
-            if node.is_internal() and node.is_root() is False:
+            if node.is_internal() and node.is_root() is False:  # Smudge evaluation results
                 node.static_evaluation_val += random.randint(-self.approx, self.approx + 1)
-                # YOU STOPPED HERE (INTERESTING STUFF)
+            # checking if interesting
+            if node.is_internal():
+                node.is_interesting = (node.interesting < self.interestingness +
+                                       (self.horizon - node.depth)*30)
+            if node.is_leaf():
+                if not (node.interesting < self.interestingness):
+                    pass
+                else:
+                    node.is_interesting = True
+                    nodelist += self.expand(node, self.varying_branching_factor(),
+                                            self.interestingness - 2)
+            if node.interesting is 10000:  # Never interesting
+                node.interesting.interesting = 0
+                node.is_interesting = False
 
     @classmethod    # TODO: FINISH WHEN REST IS OVER
     def from_file(cls, filename):   # For importing previously made trees
@@ -64,17 +77,21 @@ class Tree:
                 line_number += 1
         return cls(0, 0, cls.root.static_evaluation_val, 0, 0)
 
-    def expand(self, node, branching_factor):
+    def expand(self, node, branching_factor, interesting_threshold=0):
         if branching_factor > 0 or node.static_evaluation_val is not 10000:
             x = random.randint(0, 11)   # number from 1 - 10
             add_neg_parent = False
 
             for i in range(branching_factor):
-                if (x <= 4 or i is (branching_factor - 1)) and add_neg_parent is False:   # 40% chance of occurring
-                    node.daughters.append(Node(-node.static_evaluation_val, node))   # negative of parent node
+                # 40% chance of occurring
+                if (x <= 4 or i is (branching_factor - 1)) and add_neg_parent is False:
+                    # negative of parent node
+                    node.daughters.append(Node(-node.static_evaluation_val, node,
+                                               interesting_threshold))
                     add_neg_parent = True
                 else:
-                    node.daughters.append(Node(random.randint(-node.static_evaluation_val, 10000), node))
+                    node.daughters.append(Node(random.randint(-node.static_evaluation_val, 10000),
+                                               node, interesting_threshold))
             return node.daughters
         else:
             siblings = node.siblings()
@@ -90,12 +107,14 @@ class Tree:
         if node is None and daughters is None:
             node = self.root
             print(node.static_evaluation_val)
+            # print(node.is_interesting)
             self.display(daughters=node.daughters)
         else:
             for daughter in daughters:
                 for i in range(daughter.depth):
                     print("\t", end='', flush=True)
                 print(daughter.static_evaluation_val)
+                # print(daughter.is_interesting)
                 if daughter.is_leaf() is False:
                     self.display(daughters=daughter.daughters)
 

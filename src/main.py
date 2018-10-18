@@ -16,7 +16,7 @@ import random
 
 random_val = random.randint(-2500, 2501)
 
-tree = Tree(2, 5, random_val, 20, 0)
+tree = Tree(2, 5, random_val, 20, 20)
 tree.generate()
 tree.display()
 tree.export("tree.txt")
