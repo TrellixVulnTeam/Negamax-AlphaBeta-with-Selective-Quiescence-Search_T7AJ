@@ -7,7 +7,6 @@ Email: sabeer.bakir@ucdconnect.ie
 
 from Node import Node
 import random
-import urllib.parse
 
 
 class Tree:
@@ -24,7 +23,8 @@ class Tree:
         """
         self.branching_factor = b
         self.horizon = h
-        self.root = Node(v, None)   # Value we expect to get is the root
+        if len(self.root.daughters) is 0:
+            self.root = Node(v, None)   # Value we expect to get is the root
         self.approx = approx
         self.interestingness = i
 
@@ -63,9 +63,10 @@ class Tree:
                 node.interesting.interesting = 0
                 node.is_interesting = False
 
-    @classmethod    # TODO: FINISH WHEN REST IS OVER
+    @classmethod
     def from_file(cls, filename):   # For importing previously made trees
         file = open(filename, "r")
+        nodelist = []
         for line in file:
             values = cls.create_map(line)
             if line.startswith("b: "):
@@ -80,10 +81,11 @@ class Tree:
                     parent = None
                 else:
                     parent = int(values.get('parent'))
-                daughters = list(values.get('daughters'))
+                daughters = cls.string_to_list(values.get('daughters'))
                 depth = int(values.get('depth'))
                 interesting = int(values.get('interesting'))
-                is_interesting = bool(values.get('is_interesting'))
+                print(values.get('is_interesting'))
+                is_interesting = cls.string_to_bool(values.get('is_interesting'))
 
                 if parent is None:
                     cls.root = Node(static_evaluation, parent)
@@ -92,14 +94,13 @@ class Tree:
                     nodelist = [cls.root]
                 else:
                     for node in nodelist:
-                        if node.static_evaluation_val == parent:
-                            temp = Node(static_evaluation, node)
-                            node.daughters.append(temp)
-                            nodelist.append(temp)
-                        else:
-                            pass
-
-
+                        if node.static_evaluation_val == parent and not node.no_daughters:
+                            daughter = node.add_daughter(static_evaluation)
+                            daughter.interesting = interesting
+                            daughter.is_interesting = is_interesting
+                            if len(daughters) is 0:
+                                daughter.no_daughters = True
+                            nodelist.append(daughter)
 
         return cls(b, h, v, approx, i)
 
@@ -222,3 +223,22 @@ class Tree:
         for key in temp:
             mapping.update({key[0]: key[1]})
         return mapping
+
+    @staticmethod
+    def string_to_list(string):
+        string = string.strip('[')
+        string = string.strip(']')
+        mylist = string.split(', ')
+        int_list = []
+        for item in mylist:
+            if item is '':
+                return int_list
+            int_list.append(int(item))
+        return int_list
+
+    @staticmethod
+    def string_to_bool(string):
+        if string.strip() == 'True':
+            return True
+        else:
+            return False

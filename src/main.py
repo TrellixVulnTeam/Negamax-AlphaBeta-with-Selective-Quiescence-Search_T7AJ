@@ -12,7 +12,7 @@ import random
 # tree.generate()
 tree = Tree.from_file("tree.txt")
 tree.display()
-# tree.export("tree.txt")
+tree.export("tree2.txt")
 
 random_val = random.randint(-2500, 2501)
 

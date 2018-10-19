@@ -3,6 +3,8 @@ Name: Sabeer Bakir
 Student No.: 16333886
 Email: sabeer.bakir@ucdconnect.ie
 """
+
+
 import random
 
 
@@ -20,6 +22,7 @@ class Node:
             self.depth = 0
         self.interesting = random.randint(0, 100)       # random interesting value
         self.is_interesting = False
+        self.no_daughters = False
 
     def is_internal(self):
         if len(self.daughters) > 0:
@@ -46,7 +49,9 @@ class Node:
             return False
 
     def add_daughter(self, static_evaluation_val):
-        self.daughters.append(Node(static_evaluation_val, self))
+        daughter = Node(static_evaluation_val, self)
+        self.daughters.append(daughter)
+        return daughter
 
     def siblings(self):
         if self.is_root():
@@ -67,4 +72,3 @@ class Node:
         for node in self.daughters:
             val_list.append(node.static_evaluation_val)
         return val_list
-
