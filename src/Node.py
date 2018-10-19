@@ -61,3 +61,10 @@ class Node:
             node.parent.height = 0
             node.parent.height += update
             return self.update_height(node.parent, update + 1)
+
+    def daughters_val(self):
+        val_list = []
+        for node in self.daughters:
+            val_list.append(node.static_evaluation_val)
+        return val_list
+

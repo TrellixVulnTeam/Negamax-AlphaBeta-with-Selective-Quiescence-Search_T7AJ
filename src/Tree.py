@@ -7,6 +7,7 @@ Email: sabeer.bakir@ucdconnect.ie
 
 from Node import Node
 import random
+import urllib.parse
 
 
 class Tree:
@@ -65,17 +66,42 @@ class Tree:
     @classmethod    # TODO: FINISH WHEN REST IS OVER
     def from_file(cls, filename):   # For importing previously made trees
         file = open(filename, "r")
-        line_number = 0
         for line in file:
-            if line_number is 0:
-                cls.root = Node(int(line.strip()), None)
-                line_number += 1
+            values = cls.create_map(line)
+            if line.startswith("b: "):
+                b = int(values.get('b'))
+                h = int(values.get('h'))
+                v = int(values.get('v'))
+                approx = int(values.get('approx'))
+                i = int(values.get('i'))
             else:
-                static_evaluation_val = int(line.strip())
-                depth = line.count("\t")
-                print(str(static_evaluation_val) + "\t" + str(depth))
-                line_number += 1
-        return cls(0, 0, cls.root.static_evaluation_val, 0, 0)
+                static_evaluation = int(values.get('static_evaluation'))
+                if values.get('parent') == 'None':
+                    parent = None
+                else:
+                    parent = int(values.get('parent'))
+                daughters = list(values.get('daughters'))
+                depth = int(values.get('depth'))
+                interesting = int(values.get('interesting'))
+                is_interesting = bool(values.get('is_interesting'))
+
+                if parent is None:
+                    cls.root = Node(static_evaluation, parent)
+                    cls.root.interesting = interesting
+                    cls.root.is_interesting = is_interesting
+                    nodelist = [cls.root]
+                else:
+                    for node in nodelist:
+                        if node.static_evaluation_val == parent:
+                            temp = Node(static_evaluation, node)
+                            node.daughters.append(temp)
+                            nodelist.append(temp)
+                        else:
+                            pass
+
+
+
+        return cls(b, h, v, approx, i)
 
     def expand(self, node, branching_factor, interesting_threshold=0):
         if branching_factor > 0 or node.static_evaluation_val is not 10000:
@@ -118,22 +144,29 @@ class Tree:
                 if daughter.is_leaf() is False:
                     self.display(daughters=daughter.daughters)
 
-    def export(self, filename, node=None, daughters=None, file=None):
-        if file is None:
-            file = open(filename, "w+")
-            self.export(filename, node, daughters, file)
-        else:
-            if node is None and daughters is None:
-                node = self.root
-                file.write(str(node.static_evaluation_val) + "\n")
-                self.export(filename, daughters=node.daughters, file=file)
+    def export(self, filename):
+        file = open(filename, "w+")
+        nodelist = self.get_nodelist()
+        file.write("b: " + str(self.branching_factor) + "\t" +
+                   "h: " + str(self.horizon) + "\t" +
+                   "v: " + str(self.root.static_evaluation_val) + "\t" +
+                   "approx: " + str(self.approx) + "\t" +
+                   "i: " + str(self.interestingness) + "\n")
+        for node in nodelist:
+            if node.is_root():
+                file.write("static_evaluation: " + str(node.static_evaluation_val) + "\t" +
+                           "parent: " + str(node.parent) + "\t" +
+                           "daughters: " + str(node.daughters_val()) + "\t" +
+                           "depth: " + str(node.depth) + "\t" +
+                           "interesting: " + str(node.interesting) + "\t" +
+                           "is_interesting: " + str(node.is_interesting) + "\t\n")
             else:
-                for daughter in daughters:
-                    for i in range(daughter.depth):
-                        file.write("\t")
-                    file.write(str(daughter.static_evaluation_val) + "\n")
-                    if daughter.is_leaf() is False:
-                        self.export(filename, daughters=daughter.daughters, file=file)
+                file.write("static_evaluation: " + str(node.static_evaluation_val) + "\t" +
+                           "parent: " + str(node.parent.static_evaluation_val) + "\t" +
+                           "daughters: " + str(node.daughters_val()) + "\t" +
+                           "depth: " + str(node.depth) + "\t" +
+                           "interesting: " + str(node.interesting) + "\t" +
+                           "is_interesting: " + str(node.is_interesting) + "\t\n")
 
     def get_nodelist(self, node=None, nodelist=None):  # Get list of nodes from 'node' downwards
         if node is None and nodelist is None:
@@ -163,3 +196,29 @@ class Tree:
         elif chance in range(97, 101):  # 4% chance
             b_factor = self.branching_factor - 2
         return b_factor
+
+    def get_nodelist_val(self, node=None, nodelist=None):
+        if node is None and nodelist is None:
+            nodelist = []
+            node = self.root
+            nodelist.append(node.static_evaluation_val)
+            for node in node.daughters:
+                self.get_nodelist(node, nodelist)
+        else:
+            nodelist.append(node.static_evaluation_val)
+            for node in node.daughters:
+                self.get_nodelist(node, nodelist)
+
+        return nodelist
+
+    @staticmethod
+    def create_map(line):
+        line = line.strip()
+        split = line.split("\t")
+        mapping = dict({})
+        temp = []
+        for item in split:
+            temp.append(item.split(": "))
+        for key in temp:
+            mapping.update({key[0]: key[1]})
+        return mapping

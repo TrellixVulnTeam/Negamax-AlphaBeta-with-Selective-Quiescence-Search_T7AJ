@@ -1,42 +1,50 @@
-1726
-	2173
-		-2125
-			8717
-				-8763
-				4943
-			2217
-				-1601
-				6917
-				762
-				-2268
-		7533
-			-7423
-				8559
-				7523
-			-6249
-				6133
-					-6205
-					4252
-					-3768
-			3618
-				5333
-					-5293
-					6169
-				-3647
-	-1708
-		1808
-			-1726
-				5368
-				1726
-			-1741
-				1726
-				4268
-		3662
-			5026
-				8971
-				-4994
-			27
-				7000
-				-71
-			-3648
-				3630
+b: 2	h: 5	v: -1058	approx: 20	i: 20
+static_evaluation: -1058	parent: None	daughters: [1075, 7025]	depth: 0	interesting: 37	is_interesting: True
+static_evaluation: 1075	parent: -1058	daughters: [-997, 3725]	depth: 1	interesting: 49	is_interesting: True	
+static_evaluation: -997	parent: 1075	daughters: [6502, 1058]	depth: 2	interesting: 60	is_interesting: True	
+static_evaluation: 6502	parent: -997	daughters: []	depth: 3	interesting: 61	is_interesting: False	
+static_evaluation: 1058	parent: -997	daughters: [-1036]	depth: 3	interesting: 67	is_interesting: True	
+static_evaluation: -1036	parent: 1058	daughters: [6914, 1032]	depth: 4	interesting: 13	is_interesting: True	
+static_evaluation: 6914	parent: -1036	daughters: []	depth: 5	interesting: 59	is_interesting: False	
+static_evaluation: 1032	parent: -1036	daughters: [2679, -1058]	depth: 5	interesting: 18	is_interesting: True	
+static_evaluation: 2679	parent: 1032	daughters: []	depth: 6	interesting: 46	is_interesting: False	
+static_evaluation: -1058	parent: 1032	daughters: []	depth: 6	interesting: 36	is_interesting: False	
+static_evaluation: 3725	parent: 1075	daughters: [-3723, 4413, 95, -1649]	depth: 2	interesting: 40	is_interesting: True	
+static_evaluation: -3723	parent: 3725	daughters: [7818, 3676]	depth: 3	interesting: 7	is_interesting: True	
+static_evaluation: 7818	parent: -3723	daughters: []	depth: 4	interesting: 72	is_interesting: False	
+static_evaluation: 3676	parent: -3723	daughters: []	depth: 4	interesting: 89	is_interesting: False	
+static_evaluation: 4413	parent: 3725	daughters: [3649, -4457]	depth: 3	interesting: 85	is_interesting: False	
+static_evaluation: 3649	parent: 4413	daughters: []	depth: 4	interesting: 77	is_interesting: False	
+static_evaluation: -4457	parent: 4413	daughters: [5356, 4454]	depth: 4	interesting: 8	is_interesting: True	
+static_evaluation: 5356	parent: -4457	daughters: []	depth: 5	interesting: 56	is_interesting: False	
+static_evaluation: 4454	parent: -4457	daughters: []	depth: 5	interesting: 72	is_interesting: False	
+static_evaluation: 95	parent: 3725	daughters: [-27, 6673]	depth: 3	interesting: 63	is_interesting: True	
+static_evaluation: -27	parent: 95	daughters: []	depth: 4	interesting: 59	is_interesting: False	
+static_evaluation: 6673	parent: 95	daughters: []	depth: 4	interesting: 22	is_interesting: False	
+static_evaluation: -1649	parent: 3725	daughters: [1701, 5660]	depth: 3	interesting: 71	is_interesting: True	
+static_evaluation: 1701	parent: -1649	daughters: [8957, -1733]	depth: 4	interesting: 11	is_interesting: True	
+static_evaluation: 8957	parent: 1701	daughters: []	depth: 5	interesting: 97	is_interesting: False	
+static_evaluation: -1733	parent: 1701	daughters: []	depth: 5	interesting: 89	is_interesting: False	
+static_evaluation: 5660	parent: -1649	daughters: []	depth: 4	interesting: 64	is_interesting: False	
+static_evaluation: 7025	parent: -1058	daughters: [2950, -7024]	depth: 1	interesting: 55	is_interesting: True	
+static_evaluation: 2950	parent: 7025	daughters: [-3037, 153]	depth: 2	interesting: 65	is_interesting: True	
+static_evaluation: -3037	parent: 2950	daughters: [4215, 3012]	depth: 3	interesting: 24	is_interesting: True	
+static_evaluation: 4215	parent: -3037	daughters: []	depth: 4	interesting: 33	is_interesting: False	
+static_evaluation: 3012	parent: -3037	daughters: [-3001, 2984]	depth: 4	interesting: 13	is_interesting: True	
+static_evaluation: -3001	parent: 3012	daughters: []	depth: 5	interesting: 63	is_interesting: False	
+static_evaluation: 2984	parent: 3012	daughters: []	depth: 5	interesting: 34	is_interesting: False	
+static_evaluation: 153	parent: 2950	daughters: [-149]	depth: 3	interesting: 67	is_interesting: True	
+static_evaluation: -149	parent: 153	daughters: [8741, 177]	depth: 4	interesting: 13	is_interesting: True	
+static_evaluation: 8741	parent: -149	daughters: [-8674, -3872]	depth: 5	interesting: 18	is_interesting: True	
+static_evaluation: -8674	parent: 8741	daughters: [9766, 8698]	depth: 6	interesting: 3	is_interesting: False	
+static_evaluation: 9766	parent: -8674	daughters: []	depth: 7	interesting: 89	is_interesting: False	
+static_evaluation: 8698	parent: -8674	daughters: []	depth: 7	interesting: 66	is_interesting: False	
+static_evaluation: -3872	parent: 8741	daughters: []	depth: 6	interesting: 89	is_interesting: False	
+static_evaluation: 177	parent: -149	daughters: []	depth: 5	interesting: 82	is_interesting: False	
+static_evaluation: -7024	parent: 7025	daughters: [7005, 7545]	depth: 2	interesting: 66	is_interesting: True	
+static_evaluation: 7005	parent: -7024	daughters: [-7021, 9303]	depth: 3	interesting: 81	is_interesting: False	
+static_evaluation: -7021	parent: 7005	daughters: []	depth: 4	interesting: 97	is_interesting: False	
+static_evaluation: 9303	parent: 7005	daughters: []	depth: 4	interesting: 26	is_interesting: False	
+static_evaluation: 7545	parent: -7024	daughters: [-6125, -7547]	depth: 3	interesting: 99	is_interesting: False	
+static_evaluation: -6125	parent: 7545	daughters: []	depth: 4	interesting: 76	is_interesting: False	
+static_evaluation: -7547	parent: 7545	daughters: []	depth: 4	interesting: 20	is_interesting: False	
