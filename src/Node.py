@@ -22,7 +22,7 @@ class Node:
             self.depth = 0
         self.interesting = random.randint(0, 100)       # random interesting value
         self.is_interesting = False
-        self.no_daughters = False
+        self.daughters_size = None                         # used only for importing
 
     def is_internal(self):
         if len(self.daughters) > 0:

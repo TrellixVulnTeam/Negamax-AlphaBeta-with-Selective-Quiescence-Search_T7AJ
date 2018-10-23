@@ -64,8 +64,7 @@ class Tree:
                 node.is_interesting = False
 
     @classmethod
-    def from_file(cls, filename):   # For importing previously made trees
-        file = open(filename, "r")
+    def from_file(cls, file):   # For importing previously made trees
         nodelist = []
         for line in file:
             values = cls.create_map(line)
@@ -84,22 +83,28 @@ class Tree:
                 daughters = cls.string_to_list(values.get('daughters'))
                 depth = int(values.get('depth'))
                 interesting = int(values.get('interesting'))
-                print(values.get('is_interesting'))
                 is_interesting = cls.string_to_bool(values.get('is_interesting'))
-
+                daughters_size = len(daughters)
                 if parent is None:
                     cls.root = Node(static_evaluation, parent)
                     cls.root.interesting = interesting
                     cls.root.is_interesting = is_interesting
+                    cls.root.daughters_size = daughters_size
                     nodelist = [cls.root]
                 else:
                     for node in nodelist:
-                        if node.static_evaluation_val == parent and not node.no_daughters:
+                        # print(node.static_evaluation_val)
+                        # print(parent)
+                        # print(node.daughters_size)
+                        # print(len(node.daughters))
+                        # print()
+                        if node.static_evaluation_val == parent and \
+                                not (node.daughters_size is len(node.daughters)) and \
+                                (node.depth is depth - 1):
                             daughter = node.add_daughter(static_evaluation)
                             daughter.interesting = interesting
                             daughter.is_interesting = is_interesting
-                            if len(daughters) is 0:
-                                daughter.no_daughters = True
+                            daughter.daughters_size = daughters_size
                             nodelist.append(daughter)
 
         return cls(b, h, v, approx, i)
