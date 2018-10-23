@@ -44,8 +44,10 @@ run = True  # for while loop
 while run:
     print("1) Display Tree")
     print("2) Export Tree")
-    print("3) Negamax Alpha Beta Search")
-    print("4) Exit")
+    print("3) Negamax Search")
+    print("4) Negamax Alpha Beta Search")
+    print("5) Selective Quiescence Search")
+    print("6) Exit")
 
     try:
         choice = int(input("Input: "))
@@ -57,9 +59,24 @@ while run:
             tree.export(filename)
             print("Export Complete!")
         elif choice is 3:
-            score = negamax.search(tree.root, tree.root.height)
-            print(score)
+            score = negamax.negamax(tree.root, tree.root.height)
+            print("NEGAMAX SEARCH ALGORITHM")
+            print("Score: " + str(score))
+            print("Evaluations: " + str(negamax.evaluations))
+            negamax.evaluations = 0     # reset for future searches
         elif choice is 4:
+            score = negamax.alphabeta(tree.root, tree.root.height, negamax.alpha, negamax.beta)
+            print("NEGAMAX ALPHA BETA SEARCH ALGORITHM")
+            print("Score: " + str(score))
+            print("Evaluations: " + str(negamax.evaluations))
+            negamax.evaluations = 0     # reset for future searches
+        elif choice is 5:
+            score = negamax.selective_quiescence(tree.root, negamax.alpha, negamax.beta)
+            print("SELECTIVE QUIESCENCE SEARCH ALGORITHM")
+            print("Score: " + str(score))
+            print("Evaluations: " + str(negamax.evaluations))
+            negamax.evaluations = 0     # reset for future searches
+        elif choice is 6:
             run = False
             exit()
         else:

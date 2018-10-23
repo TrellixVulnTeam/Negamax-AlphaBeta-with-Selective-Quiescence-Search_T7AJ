@@ -15,15 +15,41 @@ class Negamax:
         self.evaluations += 1
         return node.static_evaluation_val
 
-    def search(self, node, height):
+    def negamax(self, node, height):                        # STANDARD NEGAMAX ALGORITHM
         # if height is 0 or no moves possible from node
         if height is 0 or len(node.daughters) == 0:
             return self.evaluate(node)
         else:
-            temp = 0
             score = -10000
             for move in node.daughters:
-                temp = -self.search(move, height-1)
+                temp = -self.negamax(move, height-1)
                 score = max(score, temp)
-                print(score)
+            return score
+
+    def alphabeta(self, node, height, alpha, beta):         # ALPHA BETA NEGAMAX ALGORITHM
+        # if height is 0 or no moves possible from node
+        if height is 0 or len(node.daughters) == 0:
+            return self.evaluate(node)
+        else:
+            for move in node.daughters:
+                temp = -self.alphabeta(move, height-1, -beta, -alpha)
+                if temp >= beta:        # beta cut-off
+                    return temp
+                alpha = max(temp, alpha)
+            return alpha
+
+    def selective_quiescence(self, node, alpha, beta):
+        score = self.evaluate(node)
+        if score >= beta:
+            return score
+        else:
+            for move in node.daughters:
+                if move.is_interesting:
+                    temp = -self.selective_quiescence(move, -beta, -alpha)
+                    if temp > score:
+                        score = temp
+                    if score >= alpha:
+                        alpha = score
+                    if score >= beta:
+                        break
             return score
