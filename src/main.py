@@ -11,7 +11,7 @@ from Negamax_alpha_beta import Negamax
 
 random_val = random.randint(-2500, 2501)
 negamax = Negamax()
-
+value_is_correct = False
 
 print("1) Generate Tree ?")
 print("2) Import Tree ? ")
@@ -59,20 +59,50 @@ while run:
             tree.export(filename)
             print("Export Complete!")
         elif choice is 3:
-            score = negamax.negamax(tree.root, tree.root.height)
             print("NEGAMAX SEARCH ALGORITHM")
+            print()
+            height = tree.root.height
+            while not value_is_correct:
+                try:
+                    height = int(input("Enter height (Enter 0 for height of root): "))
+                    if height is 0:
+                        height = tree.root.height
+                    if height < 0 or height > tree.root.height:
+                        print("Enter values between 0 and " + str(tree.root.height) + " Inclusive")
+                    else:
+                        value_is_correct = True
+                except ValueError:
+                    print("Enter Valid Integer Value")
+            print()
+            score = negamax.negamax(tree.root, height)
             print("Score: " + str(score))
             print("Evaluations: " + str(negamax.evaluations))
             negamax.evaluations = 0     # reset for future searches
+            value_is_correct = False    # reset for future searches
         elif choice is 4:
-            score = negamax.alphabeta(tree.root, tree.root.height, negamax.alpha, negamax.beta)
             print("NEGAMAX ALPHA BETA SEARCH ALGORITHM")
+            print()
+            height = tree.root.height
+            while not value_is_correct:
+                try:
+                    height = int(input("Enter height (Enter 0 for height of root): "))
+                    if height is 0:
+                        height = tree.root.height
+                    if height < 0 or height > tree.root.height:
+                        print("Enter values between 0 and " + str(tree.root.height) + " Inclusive")
+                    else:
+                        value_is_correct = True
+                except ValueError:
+                    print("Enter Valid Integer Value")
+            print()
+            score = negamax.alphabeta(tree.root, height, negamax.alpha, negamax.beta)
             print("Score: " + str(score))
             print("Evaluations: " + str(negamax.evaluations))
             negamax.evaluations = 0     # reset for future searches
         elif choice is 5:
-            score = negamax.selective_quiescence(tree.root, negamax.alpha, negamax.beta)
             print("SELECTIVE QUIESCENCE SEARCH ALGORITHM")
+            print()
+            score = negamax.selective_quiescence(tree.root, negamax.alpha, negamax.beta)
             print("Score: " + str(score))
             print("Evaluations: " + str(negamax.evaluations))
             negamax.evaluations = 0     # reset for future searches
