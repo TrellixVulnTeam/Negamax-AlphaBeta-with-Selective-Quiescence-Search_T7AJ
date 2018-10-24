@@ -80,6 +80,8 @@ elif choice is 3:
                                                                             negamax.alpha,
                                                                             negamax.beta))
                                + "\n")
+                    print("Run no.: " + str(run_num) + "\t" + "b_factor: " + str(b_factor) + "\t" +
+                          "horizon: " + str(horizon) + "\tCOMPLETED!\n")
 #     else:
 #         print("Invalid Option")
 #         exit()
