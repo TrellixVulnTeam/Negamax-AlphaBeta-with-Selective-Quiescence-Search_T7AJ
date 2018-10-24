@@ -48,6 +48,10 @@ class Tree:
         for node in nodelist:
             if node.is_internal() and node.is_root() is False:  # Smudge evaluation results
                 node.static_evaluation_val += random.randint(-self.approx, self.approx + 1)
+                if node.static_evaluation_val < -10000:
+                    node.static_evaluation_val = -10000
+                if node.static_evaluation_val > 10000:
+                    node.static_evaluation_val = 10000
             # checking if interesting
             if node.is_internal():
                 node.is_interesting = (node.interesting < self.interestingness +
@@ -60,7 +64,6 @@ class Tree:
                     nodelist += self.expand(node, self.varying_branching_factor(),
                                             self.interestingness - 2)
             if node.interesting is 10000:  # Never interesting
-                node.interesting.interesting = 0
                 node.is_interesting = False
 
     @classmethod
@@ -122,8 +125,8 @@ class Tree:
                                                interesting_threshold))
                     add_neg_parent = True
                 else:
-                    node.daughters.append(Node(random.randint(-node.static_evaluation_val, 10000),
-                                               node, interesting_threshold))
+                    val = random.randint(-1 * node.static_evaluation_val, 10000)
+                    node.daughters.append(Node(val, node, interesting_threshold))
             return node.daughters
         else:
             siblings = node.siblings()

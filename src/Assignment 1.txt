@@ -1,0 +1,2517 @@
+----------------------------------------
+RUN NUMBER 1
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -209
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -133
+Evaluations: 7
+
+Horizon-1: 
+Score: -209
+Evaluations: 23
+
+Horizon: 
+Score: -209
+Evaluations: 38
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -209
+----------------------------------------
+RUN NUMBER 2
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -186
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -143
+Evaluations: 19
+
+Horizon-1: 
+Score: -301
+Evaluations: 23
+
+Horizon: 
+Score: -186
+Evaluations: 31
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -143
+----------------------------------------
+RUN NUMBER 3
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -1070
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1145
+Evaluations: 19
+
+Horizon-1: 
+Score: -1157
+Evaluations: 27
+
+Horizon: 
+Score: -1070
+Evaluations: 43
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1070
+----------------------------------------
+RUN NUMBER 4
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -2286
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1854
+Evaluations: 15
+
+Horizon-1: 
+Score: -2286
+Evaluations: 13
+
+Horizon: 
+Score: -2286
+Evaluations: 13
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -2286
+----------------------------------------
+RUN NUMBER 5
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 1075
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 902
+Evaluations: 13
+
+Horizon-1: 
+Score: 1075
+Evaluations: 15
+
+Horizon: 
+Score: 1075
+Evaluations: 17
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1075
+----------------------------------------
+RUN NUMBER 6
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -1970
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -2037
+Evaluations: 15
+
+Horizon-1: 
+Score: -1970
+Evaluations: 25
+
+Horizon: 
+Score: -1970
+Evaluations: 30
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1970
+----------------------------------------
+RUN NUMBER 7
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -871
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -937
+Evaluations: 17
+
+Horizon-1: 
+Score: -871
+Evaluations: 27
+
+Horizon: 
+Score: -871
+Evaluations: 32
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -871
+----------------------------------------
+RUN NUMBER 8
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -151
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 37
+Evaluations: 16
+
+Horizon-1: 
+Score: -151
+Evaluations: 18
+
+Horizon: 
+Score: -151
+Evaluations: 22
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 23
+----------------------------------------
+RUN NUMBER 9
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 2037
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1785
+Evaluations: 19
+
+Horizon-1: 
+Score: 1801
+Evaluations: 29
+
+Horizon: 
+Score: 1571
+Evaluations: 39
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2037
+----------------------------------------
+RUN NUMBER 10
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -570
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -388
+Evaluations: 16
+
+Horizon-1: 
+Score: -570
+Evaluations: 27
+
+Horizon: 
+Score: -570
+Evaluations: 31
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -513
+----------------------------------------
+RUN NUMBER 11
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -971
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1009
+Evaluations: 17
+
+Horizon-1: 
+Score: -971
+Evaluations: 20
+
+Horizon: 
+Score: -971
+Evaluations: 33
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -971
+----------------------------------------
+RUN NUMBER 12
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -448
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -377
+Evaluations: 20
+
+Horizon-1: 
+Score: -448
+Evaluations: 14
+
+Horizon: 
+Score: -448
+Evaluations: 18
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -383
+----------------------------------------
+RUN NUMBER 1
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -1485
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1420
+Evaluations: 14
+
+Horizon-1: 
+Score: -1485
+Evaluations: 18
+
+Horizon: 
+Score: -1485
+Evaluations: 21
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1420
+----------------------------------------
+RUN NUMBER 2
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -1232
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1116
+Evaluations: 16
+
+Horizon-1: 
+Score: -1232
+Evaluations: 17
+
+Horizon: 
+Score: -1232
+Evaluations: 19
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1232
+----------------------------------------
+RUN NUMBER 3
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 2004
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1960
+Evaluations: 12
+
+Horizon-1: 
+Score: 1765
+Evaluations: 22
+
+Horizon: 
+Score: 2004
+Evaluations: 30
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2004
+----------------------------------------
+RUN NUMBER 4
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -841
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -905
+Evaluations: 19
+
+Horizon-1: 
+Score: -841
+Evaluations: 18
+
+Horizon: 
+Score: -841
+Evaluations: 19
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -841
+----------------------------------------
+RUN NUMBER 5
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 2138
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2117
+Evaluations: 12
+
+Horizon-1: 
+Score: 2138
+Evaluations: 8
+
+Horizon: 
+Score: 2138
+Evaluations: 8
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2138
+----------------------------------------
+RUN NUMBER 6
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 1845
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1221
+Evaluations: 10
+
+Horizon-1: 
+Score: 1845
+Evaluations: 13
+
+Horizon: 
+Score: 1845
+Evaluations: 17
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1845
+----------------------------------------
+RUN NUMBER 7
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -1270
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1212
+Evaluations: 17
+
+Horizon-1: 
+Score: -1270
+Evaluations: 19
+
+Horizon: 
+Score: -1270
+Evaluations: 24
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1212
+----------------------------------------
+RUN NUMBER 8
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 493
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 404
+Evaluations: 21
+
+Horizon-1: 
+Score: 493
+Evaluations: 13
+
+Horizon: 
+Score: 493
+Evaluations: 19
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 493
+----------------------------------------
+RUN NUMBER 9
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 1618
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2110
+Evaluations: 14
+
+Horizon-1: 
+Score: 1618
+Evaluations: 16
+
+Horizon: 
+Score: 1618
+Evaluations: 23
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1886
+----------------------------------------
+RUN NUMBER 10
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 1083
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 394
+Evaluations: 16
+
+Horizon-1: 
+Score: 1083
+Evaluations: 22
+
+Horizon: 
+Score: 1083
+Evaluations: 28
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1083
+----------------------------------------
+RUN NUMBER 11
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 1253
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1024
+Evaluations: 14
+
+Horizon-1: 
+Score: 1253
+Evaluations: 25
+
+Horizon: 
+Score: 1253
+Evaluations: 26
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1253
+----------------------------------------
+RUN NUMBER 12
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 2470
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2630
+Evaluations: 18
+
+Horizon-1: 
+Score: 2657
+Evaluations: 26
+
+Horizon: 
+Score: 2657
+Evaluations: 33
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2630
+----------------------------------------
+RUN NUMBER 1
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -2093
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1910
+Evaluations: 23
+
+Horizon-1: 
+Score: -2093
+Evaluations: 33
+
+Horizon: 
+Score: -2093
+Evaluations: 36
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -2093
+----------------------------------------
+RUN NUMBER 2
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 2276
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2774
+Evaluations: 12
+
+Horizon-1: 
+Score: 2276
+Evaluations: 9
+
+Horizon: 
+Score: 2276
+Evaluations: 9
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2276
+----------------------------------------
+RUN NUMBER 3
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 847
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 665
+Evaluations: 14
+
+Horizon-1: 
+Score: 847
+Evaluations: 25
+
+Horizon: 
+Score: 847
+Evaluations: 27
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1285
+----------------------------------------
+RUN NUMBER 4
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -2265
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -3302
+Evaluations: 18
+
+Horizon-1: 
+Score: -1829
+Evaluations: 34
+
+Horizon: 
+Score: -2265
+Evaluations: 45
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -2265
+----------------------------------------
+RUN NUMBER 5
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 418
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -233
+Evaluations: 14
+
+Horizon-1: 
+Score: 369
+Evaluations: 9
+
+Horizon: 
+Score: 418
+Evaluations: 13
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 418
+----------------------------------------
+RUN NUMBER 6
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 604
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 611
+Evaluations: 9
+
+Horizon-1: 
+Score: 752
+Evaluations: 21
+
+Horizon: 
+Score: 604
+Evaluations: 31
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 617
+----------------------------------------
+RUN NUMBER 7
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 757
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 810
+Evaluations: 17
+
+Horizon-1: 
+Score: 757
+Evaluations: 27
+
+Horizon: 
+Score: 757
+Evaluations: 35
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 810
+----------------------------------------
+RUN NUMBER 8
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 1632
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 857
+Evaluations: 18
+
+Horizon-1: 
+Score: 1632
+Evaluations: 18
+
+Horizon: 
+Score: 1632
+Evaluations: 22
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1632
+----------------------------------------
+RUN NUMBER 9
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -1503
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1121
+Evaluations: 23
+
+Horizon-1: 
+Score: -1503
+Evaluations: 27
+
+Horizon: 
+Score: -1503
+Evaluations: 34
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1503
+----------------------------------------
+RUN NUMBER 10
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 520
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 414
+Evaluations: 12
+
+Horizon-1: 
+Score: 520
+Evaluations: 9
+
+Horizon: 
+Score: 520
+Evaluations: 9
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 520
+----------------------------------------
+RUN NUMBER 11
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: 2327
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2165
+Evaluations: 14
+
+Horizon-1: 
+Score: 2327
+Evaluations: 23
+
+Horizon: 
+Score: 2327
+Evaluations: 29
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2593
+----------------------------------------
+RUN NUMBER 12
+----------------------------------------
+branching factor: 3
+horizon: 4
+desired value: -1188
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -2220
+Evaluations: 18
+
+Horizon-1: 
+Score: -1188
+Evaluations: 24
+
+Horizon: 
+Score: -1188
+Evaluations: 25
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -711
+----------------------------------------
+RUN NUMBER 1
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -553
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -462
+Evaluations: 32
+
+Horizon-1: 
+Score: -553
+Evaluations: 86
+
+Horizon: 
+Score: -553
+Evaluations: 111
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -553
+----------------------------------------
+RUN NUMBER 2
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 1048
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1180
+Evaluations: 29
+
+Horizon-1: 
+Score: 1048
+Evaluations: 65
+
+Horizon: 
+Score: 1048
+Evaluations: 86
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1099
+----------------------------------------
+RUN NUMBER 3
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 2103
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1880
+Evaluations: 36
+
+Horizon-1: 
+Score: 2065
+Evaluations: 56
+
+Horizon: 
+Score: 2140
+Evaluations: 66
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2103
+----------------------------------------
+RUN NUMBER 4
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 2484
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2523
+Evaluations: 38
+
+Horizon-1: 
+Score: 2484
+Evaluations: 53
+
+Horizon: 
+Score: 2484
+Evaluations: 68
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2484
+----------------------------------------
+RUN NUMBER 5
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -2123
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -2042
+Evaluations: 39
+
+Horizon-1: 
+Score: -2123
+Evaluations: 86
+
+Horizon: 
+Score: -2123
+Evaluations: 106
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -2123
+----------------------------------------
+RUN NUMBER 6
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 2153
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2319
+Evaluations: 34
+
+Horizon-1: 
+Score: 2153
+Evaluations: 61
+
+Horizon: 
+Score: 2153
+Evaluations: 73
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2263
+----------------------------------------
+RUN NUMBER 7
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 1673
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2538
+Evaluations: 34
+
+Horizon-1: 
+Score: 1673
+Evaluations: 49
+
+Horizon: 
+Score: 1673
+Evaluations: 63
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1673
+----------------------------------------
+RUN NUMBER 8
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 460
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 451
+Evaluations: 32
+
+Horizon-1: 
+Score: 460
+Evaluations: 52
+
+Horizon: 
+Score: 460
+Evaluations: 73
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 460
+----------------------------------------
+RUN NUMBER 9
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -875
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -736
+Evaluations: 29
+
+Horizon-1: 
+Score: -875
+Evaluations: 58
+
+Horizon: 
+Score: -875
+Evaluations: 71
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -769
+----------------------------------------
+RUN NUMBER 10
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -1204
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -905
+Evaluations: 31
+
+Horizon-1: 
+Score: -1204
+Evaluations: 17
+
+Horizon: 
+Score: -1204
+Evaluations: 22
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -905
+----------------------------------------
+RUN NUMBER 11
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 1787
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1708
+Evaluations: 23
+
+Horizon-1: 
+Score: 1787
+Evaluations: 28
+
+Horizon: 
+Score: 1787
+Evaluations: 37
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1787
+----------------------------------------
+RUN NUMBER 12
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 1235
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1638
+Evaluations: 32
+
+Horizon-1: 
+Score: 1235
+Evaluations: 44
+
+Horizon: 
+Score: 1235
+Evaluations: 49
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1379
+----------------------------------------
+RUN NUMBER 1
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -904
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -87
+Evaluations: 33
+
+Horizon-1: 
+Score: -904
+Evaluations: 45
+
+Horizon: 
+Score: -904
+Evaluations: 54
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -643
+----------------------------------------
+RUN NUMBER 2
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 454
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1096
+Evaluations: 34
+
+Horizon-1: 
+Score: 454
+Evaluations: 52
+
+Horizon: 
+Score: 454
+Evaluations: 61
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 454
+----------------------------------------
+RUN NUMBER 3
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 1414
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 544
+Evaluations: 28
+
+Horizon-1: 
+Score: 813
+Evaluations: 33
+
+Horizon: 
+Score: 362
+Evaluations: 41
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1414
+----------------------------------------
+RUN NUMBER 4
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 1614
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2815
+Evaluations: 31
+
+Horizon-1: 
+Score: 1614
+Evaluations: 57
+
+Horizon: 
+Score: 1614
+Evaluations: 70
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1614
+----------------------------------------
+RUN NUMBER 5
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -233
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 780
+Evaluations: 41
+
+Horizon-1: 
+Score: -233
+Evaluations: 64
+
+Horizon: 
+Score: -233
+Evaluations: 71
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -20
+----------------------------------------
+RUN NUMBER 6
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 1439
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1516
+Evaluations: 40
+
+Horizon-1: 
+Score: 1338
+Evaluations: 40
+
+Horizon: 
+Score: 1338
+Evaluations: 49
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1516
+----------------------------------------
+RUN NUMBER 7
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 2452
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2327
+Evaluations: 32
+
+Horizon-1: 
+Score: 2452
+Evaluations: 31
+
+Horizon: 
+Score: 2452
+Evaluations: 38
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2452
+----------------------------------------
+RUN NUMBER 8
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -2152
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -4743
+Evaluations: 22
+
+Horizon-1: 
+Score: -1740
+Evaluations: 28
+
+Horizon: 
+Score: -2152
+Evaluations: 37
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -2152
+----------------------------------------
+RUN NUMBER 9
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -1392
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1670
+Evaluations: 37
+
+Horizon-1: 
+Score: -1392
+Evaluations: 67
+
+Horizon: 
+Score: -1392
+Evaluations: 85
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1291
+----------------------------------------
+RUN NUMBER 10
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 2148
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2024
+Evaluations: 43
+
+Horizon-1: 
+Score: 2148
+Evaluations: 47
+
+Horizon: 
+Score: 2148
+Evaluations: 53
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2148
+----------------------------------------
+RUN NUMBER 11
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -2173
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -3288
+Evaluations: 28
+
+Horizon-1: 
+Score: -2026
+Evaluations: 27
+
+Horizon: 
+Score: -2173
+Evaluations: 39
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1619
+----------------------------------------
+RUN NUMBER 12
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 1800
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2180
+Evaluations: 20
+
+Horizon-1: 
+Score: 1800
+Evaluations: 23
+
+Horizon: 
+Score: 1800
+Evaluations: 27
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2101
+----------------------------------------
+RUN NUMBER 1
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -2364
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -2270
+Evaluations: 34
+
+Horizon-1: 
+Score: -2364
+Evaluations: 77
+
+Horizon: 
+Score: -2364
+Evaluations: 93
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -2270
+----------------------------------------
+RUN NUMBER 2
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 1742
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1549
+Evaluations: 32
+
+Horizon-1: 
+Score: 1742
+Evaluations: 58
+
+Horizon: 
+Score: 1742
+Evaluations: 72
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1742
+----------------------------------------
+RUN NUMBER 3
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -772
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -678
+Evaluations: 39
+
+Horizon-1: 
+Score: -772
+Evaluations: 49
+
+Horizon: 
+Score: -772
+Evaluations: 69
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -772
+----------------------------------------
+RUN NUMBER 4
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -771
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -760
+Evaluations: 32
+
+Horizon-1: 
+Score: -771
+Evaluations: 55
+
+Horizon: 
+Score: -771
+Evaluations: 81
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -760
+----------------------------------------
+RUN NUMBER 5
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 1882
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2380
+Evaluations: 35
+
+Horizon-1: 
+Score: 1882
+Evaluations: 48
+
+Horizon: 
+Score: 1882
+Evaluations: 68
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1882
+----------------------------------------
+RUN NUMBER 6
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 1342
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -110
+Evaluations: 29
+
+Horizon-1: 
+Score: 1342
+Evaluations: 45
+
+Horizon: 
+Score: 1342
+Evaluations: 56
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1342
+----------------------------------------
+RUN NUMBER 7
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 2100
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 642
+Evaluations: 48
+
+Horizon-1: 
+Score: 1520
+Evaluations: 108
+
+Horizon: 
+Score: 1520
+Evaluations: 129
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2100
+----------------------------------------
+RUN NUMBER 8
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 1049
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1790
+Evaluations: 31
+
+Horizon-1: 
+Score: 1049
+Evaluations: 49
+
+Horizon: 
+Score: 1049
+Evaluations: 61
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1049
+----------------------------------------
+RUN NUMBER 9
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -1940
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -2153
+Evaluations: 44
+
+Horizon-1: 
+Score: -1940
+Evaluations: 51
+
+Horizon: 
+Score: -1940
+Evaluations: 82
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1940
+----------------------------------------
+RUN NUMBER 10
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -1783
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1642
+Evaluations: 32
+
+Horizon-1: 
+Score: -1783
+Evaluations: 44
+
+Horizon: 
+Score: -1783
+Evaluations: 55
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1783
+----------------------------------------
+RUN NUMBER 11
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: 717
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 907
+Evaluations: 29
+
+Horizon-1: 
+Score: 717
+Evaluations: 43
+
+Horizon: 
+Score: 717
+Evaluations: 51
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 907
+----------------------------------------
+RUN NUMBER 12
+----------------------------------------
+branching factor: 3
+horizon: 5
+desired value: -128
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1260
+Evaluations: 37
+
+Horizon-1: 
+Score: -128
+Evaluations: 30
+
+Horizon: 
+Score: -128
+Evaluations: 36
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -128
+----------------------------------------
+RUN NUMBER 1
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -2057
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1986
+Evaluations: 66
+
+Horizon-1: 
+Score: -2450
+Evaluations: 156
+
+Horizon: 
+Score: -2057
+Evaluations: 181
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -2057
+----------------------------------------
+RUN NUMBER 2
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 2078
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1574
+Evaluations: 68
+
+Horizon-1: 
+Score: 2078
+Evaluations: 120
+
+Horizon: 
+Score: 2078
+Evaluations: 156
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2078
+----------------------------------------
+RUN NUMBER 3
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -351
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1113
+Evaluations: 45
+
+Horizon-1: 
+Score: -336
+Evaluations: 70
+
+Horizon: 
+Score: -336
+Evaluations: 94
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -351
+----------------------------------------
+RUN NUMBER 4
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 181
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 676
+Evaluations: 61
+
+Horizon-1: 
+Score: 105
+Evaluations: 132
+
+Horizon: 
+Score: 105
+Evaluations: 153
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 181
+----------------------------------------
+RUN NUMBER 5
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 51
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -584
+Evaluations: 96
+
+Horizon-1: 
+Score: -361
+Evaluations: 181
+
+Horizon: 
+Score: -361
+Evaluations: 222
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 51
+----------------------------------------
+RUN NUMBER 6
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -1588
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -2721
+Evaluations: 104
+
+Horizon-1: 
+Score: -2509
+Evaluations: 205
+
+Horizon: 
+Score: -2621
+Evaluations: 280
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1588
+----------------------------------------
+RUN NUMBER 7
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 1439
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1572
+Evaluations: 92
+
+Horizon-1: 
+Score: 1439
+Evaluations: 165
+
+Horizon: 
+Score: 1439
+Evaluations: 200
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1599
+----------------------------------------
+RUN NUMBER 8
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 890
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -296
+Evaluations: 82
+
+Horizon-1: 
+Score: 890
+Evaluations: 164
+
+Horizon: 
+Score: 890
+Evaluations: 195
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 890
+----------------------------------------
+RUN NUMBER 9
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 1418
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 631
+Evaluations: 59
+
+Horizon-1: 
+Score: 1418
+Evaluations: 116
+
+Horizon: 
+Score: 1418
+Evaluations: 134
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1418
+----------------------------------------
+RUN NUMBER 10
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -1062
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -871
+Evaluations: 89
+
+Horizon-1: 
+Score: -1062
+Evaluations: 182
+
+Horizon: 
+Score: -1062
+Evaluations: 251
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1062
+----------------------------------------
+RUN NUMBER 11
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -1077
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -550
+Evaluations: 85
+
+Horizon-1: 
+Score: -1077
+Evaluations: 163
+
+Horizon: 
+Score: -1077
+Evaluations: 193
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1077
+----------------------------------------
+RUN NUMBER 12
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 899
+approx: 100
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -434
+Evaluations: 59
+
+Horizon-1: 
+Score: 899
+Evaluations: 98
+
+Horizon: 
+Score: 899
+Evaluations: 108
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1400
+----------------------------------------
+RUN NUMBER 1
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 284
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -232
+Evaluations: 70
+
+Horizon-1: 
+Score: 284
+Evaluations: 141
+
+Horizon: 
+Score: 284
+Evaluations: 183
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 284
+----------------------------------------
+RUN NUMBER 2
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 1135
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 224
+Evaluations: 133
+
+Horizon-1: 
+Score: -210
+Evaluations: 272
+
+Horizon: 
+Score: -210
+Evaluations: 328
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1135
+----------------------------------------
+RUN NUMBER 3
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -779
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -506
+Evaluations: 64
+
+Horizon-1: 
+Score: -779
+Evaluations: 110
+
+Horizon: 
+Score: -779
+Evaluations: 138
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -442
+----------------------------------------
+RUN NUMBER 4
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -2038
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -2353
+Evaluations: 112
+
+Horizon-1: 
+Score: -2343
+Evaluations: 238
+
+Horizon: 
+Score: -1993
+Evaluations: 305
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -2038
+----------------------------------------
+RUN NUMBER 5
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -884
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1311
+Evaluations: 87
+
+Horizon-1: 
+Score: -884
+Evaluations: 147
+
+Horizon: 
+Score: -884
+Evaluations: 187
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -884
+----------------------------------------
+RUN NUMBER 6
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 1081
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 3705
+Evaluations: 43
+
+Horizon-1: 
+Score: 1081
+Evaluations: 45
+
+Horizon: 
+Score: 1081
+Evaluations: 56
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1081
+----------------------------------------
+RUN NUMBER 7
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -649
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -971
+Evaluations: 55
+
+Horizon-1: 
+Score: -705
+Evaluations: 121
+
+Horizon: 
+Score: -649
+Evaluations: 138
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -649
+----------------------------------------
+RUN NUMBER 8
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -1690
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1944
+Evaluations: 57
+
+Horizon-1: 
+Score: -1690
+Evaluations: 82
+
+Horizon: 
+Score: -1690
+Evaluations: 95
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1658
+----------------------------------------
+RUN NUMBER 9
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 2480
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2688
+Evaluations: 74
+
+Horizon-1: 
+Score: 2954
+Evaluations: 163
+
+Horizon: 
+Score: 2652
+Evaluations: 203
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2836
+----------------------------------------
+RUN NUMBER 10
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -1739
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -2825
+Evaluations: 87
+
+Horizon-1: 
+Score: -1530
+Evaluations: 99
+
+Horizon: 
+Score: -1739
+Evaluations: 122
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -1739
+----------------------------------------
+RUN NUMBER 11
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -512
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -273
+Evaluations: 58
+
+Horizon-1: 
+Score: -512
+Evaluations: 112
+
+Horizon: 
+Score: -512
+Evaluations: 125
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -312
+----------------------------------------
+RUN NUMBER 12
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -2010
+approx: 200
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -2928
+Evaluations: 59
+
+Horizon-1: 
+Score: -2443
+Evaluations: 96
+
+Horizon: 
+Score: -2443
+Evaluations: 121
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -2010
+----------------------------------------
+RUN NUMBER 1
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 1145
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -1412
+Evaluations: 74
+
+Horizon-1: 
+Score: 1145
+Evaluations: 120
+
+Horizon: 
+Score: 1145
+Evaluations: 169
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1145
+----------------------------------------
+RUN NUMBER 2
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 1358
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 695
+Evaluations: 91
+
+Horizon-1: 
+Score: 1358
+Evaluations: 129
+
+Horizon: 
+Score: 1358
+Evaluations: 172
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1358
+----------------------------------------
+RUN NUMBER 3
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -921
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 611
+Evaluations: 67
+
+Horizon-1: 
+Score: -921
+Evaluations: 106
+
+Horizon: 
+Score: -921
+Evaluations: 113
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -921
+----------------------------------------
+RUN NUMBER 4
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 2044
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -666
+Evaluations: 72
+
+Horizon-1: 
+Score: 2044
+Evaluations: 128
+
+Horizon: 
+Score: 2044
+Evaluations: 147
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 2044
+----------------------------------------
+RUN NUMBER 5
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 1336
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 1336
+Evaluations: 90
+
+Horizon-1: 
+Score: 752
+Evaluations: 184
+
+Horizon: 
+Score: -373
+Evaluations: 213
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1594
+----------------------------------------
+RUN NUMBER 6
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -856
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -2776
+Evaluations: 62
+
+Horizon-1: 
+Score: -856
+Evaluations: 55
+
+Horizon: 
+Score: -856
+Evaluations: 64
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -298
+----------------------------------------
+RUN NUMBER 7
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 1106
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 844
+Evaluations: 66
+
+Horizon-1: 
+Score: 1165
+Evaluations: 132
+
+Horizon: 
+Score: -15
+Evaluations: 155
+
+SELECTIVE QUIESCENCE SEARCH
+Score: 1106
+----------------------------------------
+RUN NUMBER 8
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: -586
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: -530
+Evaluations: 73
+
+Horizon-1: 
+Score: -804
+Evaluations: 119
+
+Horizon: 
+Score: -586
+Evaluations: 154
+
+SELECTIVE QUIESCENCE SEARCH
+Score: -99
+----------------------------------------
+RUN NUMBER 9
+----------------------------------------
+branching factor: 3
+horizon: 6
+desired value: 1657
+approx: 300
+interestingness: 20
+
+NEGAMAX ALPHA BETA SEARCH
+Horizon-2: 
+Score: 2658
+Evaluations: 75
+
+Horizon-1: 
+Score: 1657
+Evaluations: 199
+
+Horizon: 
+Score: 1657
+Evaluations: 237
