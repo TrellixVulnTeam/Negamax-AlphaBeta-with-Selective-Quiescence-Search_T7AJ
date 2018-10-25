@@ -53,3 +53,18 @@ class Negamax:
                     if score >= beta:
                         break
             return score
+
+    def alphabeta_quiet(self, node, height, alpha, beta, maxing=True):
+        # if height is 0 or no moves possible from node
+        if height is 0 or len(node.daughters) == 0:
+            if maxing is True:
+                return self.selective_quiescence(node, alpha, beta)
+            else:
+                return self.selective_quiescence(node, -beta, alpha)
+        else:
+            for move in node.daughters:
+                temp = -self.alphabeta_quiet(move, height-1, -beta, -alpha, not maxing)
+                if temp >= beta:        # beta cut-off
+                    return temp
+                alpha = max(temp, alpha)
+            return alpha

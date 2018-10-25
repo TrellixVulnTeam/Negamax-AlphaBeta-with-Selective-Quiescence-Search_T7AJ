@@ -56,13 +56,15 @@ class Tree:
             if node.is_internal():
                 node.is_interesting = (node.interesting < self.interestingness +
                                        (self.horizon - node.depth)*30)
-            if node.is_leaf():
-                if not (node.interesting < self.interestingness):
+            if node.is_leaf():          # TODO: CHECK THIS
+                if not (node.interesting < node.interestingness):
                     pass
                 else:
                     node.is_interesting = True
+                    print(nodelist)
                     nodelist += self.expand(node, self.varying_branching_factor(),
-                                            self.interestingness - 2)
+                                            node.interestingness - 2)
+                    print(nodelist)
             if node.interesting is 10000:  # Never interesting
                 node.is_interesting = False
 
@@ -112,7 +114,7 @@ class Tree:
 
         return cls(b, h, v, approx, i)
 
-    def expand(self, node, branching_factor, interesting_threshold=0):
+    def expand(self, node, branching_factor, interesting_threshold=0):  # TODO: Recreate
         if branching_factor > 0 or node.static_evaluation_val is not 10000:
             x = random.randint(0, 11)   # number from 1 - 10
             add_neg_parent = False
@@ -130,13 +132,10 @@ class Tree:
             return node.daughters
         else:
             siblings = node.siblings()
-            if len(siblings) < 2:
-                return None     # Nothing left
-            else:
-                for sibling in siblings:
-                    if sibling is not node:
-                        b_factor = self.varying_branching_factor()
-                        return self.expand(sibling, b_factor)
+            for sibling in siblings:
+                if sibling is not node:
+                    b_factor = self.varying_branching_factor()
+                    return self.expand(sibling, b_factor)
 
     def display(self, node=None, daughters=None):
         if node is None and daughters is None:
